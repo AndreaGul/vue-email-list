@@ -16,19 +16,9 @@ createApp({
       email8: null,
       email9: null,
       email10: null,
-      maxNumber: 10,
     };
   },
-  // methods: {
-  //   randomEmail(index) {
-  //     if (index < this.maxNumber) {
-  //       axios.get(this.apiEmaiUrl).then((response) => {
-  //         console.log(response.data);
-  //         this.emails.push = response.data.response;
-  //       });
-  //     }
-  //   },
-  // },
+
   created() {
     axios.get(this.apiEmaiUrl).then((response) => {
       this.email1 = response.data.response;
